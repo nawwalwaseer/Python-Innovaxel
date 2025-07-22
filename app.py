@@ -614,11 +614,10 @@ async def main():
 asyncio.run(main())
 
 # PDB DEBUGGING
-# import pdb
-# def add_numbers(a, b):
-#     pdb.set_trace()  # 🔴 This pauses execution here
-#     result = a + b
-#     return result
+import pdb
+def add_numbers(a, b):
+    pdb.set_trace()  # 🔴 This pauses execution here
+    result = a + b
+    return result
 
-# add_numbers(5, 3)
-#added
+add_numbers(5, 3)
