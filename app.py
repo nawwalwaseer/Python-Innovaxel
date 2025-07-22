@@ -613,4 +613,31 @@ async def main():
 
 asyncio.run(main())
 
+# function to find max, min from a list
+
+def find_max_min(numbers):
+    if not numbers:
+        raise ValueError("list cannot be empty")
+    
+    max_num = max(numbers)
+    min_num = min(numbers)
+
+    print(f"Max: {max_num}, Min: {min_num}")
+    return max_num, min_num
+
+find_max_min([0,123443,22,4,2])
+
+# function to reverse a string
+
+def reverse_words(sentence:str)->str:
+    if not isinstance(sentence,str):
+        raise TypeError("input must be a string!")
+    
+    words = sentence.split()
+    reversedWords = ' '.join(reversed(words))
+    print(reversedWords)
+    return reversedWords
+
+reverse_words("Hello my name is Nawwal!")
+
 
